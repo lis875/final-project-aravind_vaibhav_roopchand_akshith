@@ -1,4 +1,6 @@
-api_key = "8bf41bd8dd79b79f2cce125f6eb2bda0"
+from config import TMDB_API_KEY
+
+api_key = TMDB_API_KEY
 
 import requests
 import json
@@ -65,4 +67,4 @@ def get_movie_details(movie_name):
 
     return movie_output
 
-# print(get_movie_details("wertyuidngasyudhia"))
+# print(get_movie_details("Harry"))
