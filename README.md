@@ -25,4 +25,9 @@ For detailed story, read - [Final Story](https://github.com/lis875/final-project
 - Used turtle 🐢 library to display content
 - Used hangman 😵(from week 8 studio) for the prison unlock pin 🔐
 - Used 'time' ⏳ library to pause the code.
-- Used [TMDB API](https://developer.themoviedb.org/docs) to get movie details 🎬
+- [TMDB API](https://developer.themoviedb.org/docs) has been used to get movie details 🎬 as per user requirement.
+- Program divided ➗ into different modules and functions to maintain code quality 🧑‍💻
+- Easy to choose input options 🔢
+- Attention to detail in the story 🎦
+- The color chosen by the user has been used as a part of the story 🚕 🔫
+- Reused codes from previous labs and studios!!!!♻️
