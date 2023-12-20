@@ -32,8 +32,8 @@ para1 = f"""\n
         A hesitant frown creased the detective1’s brow as he was holding his phone.
         """
 
-hangman_hint = """
-The key is summation of where you are and how long it’s been \n (36 + 992)
+hangman_hint = f"""
+The key is summation of where you are and how long it’s been \n ({JAIL_CELL} + {NUMBER_OF_DAYS_IN_JAIL})
 """
 hangman_input_prompt = "Enter the pin to unlock the cell"
 
