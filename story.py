@@ -6,6 +6,9 @@ color_prompt = "Color color which color do you want?"
 movie_promt = "Enter your favourite movie"
 accept_mission = "Do you want to accept this mission? \n 1. Yes \n 2. No"
 
+jump="Do you wanna land the plane at your \n 1)desired location or do you wanna \n 2)skydive?"
+
+
 para1 = f"""\n
         The story begins in the jail located in the extreme southern and
         shadiest part of the city residing the most vicious criminals across
@@ -29,7 +32,9 @@ para1 = f"""\n
         A hesitant frown creased the detective1’s brow as he was holding his phone.
         """
 
-hangman_hint = "\n\n\nThe key is summation of where you are and how long it’s been \n (36 + 992)"
+hangman_hint = """
+The key is summation of where you are and how long it’s been \n (36 + 992)
+"""
 hangman_input_prompt = "Enter the pin to unlock the cell"
 
 para2 = """
@@ -109,12 +114,63 @@ Wielding an invisible rocket launcher, he pointed it at the pilot, ready to unra
 of the enigma that had brought him back into the fold.
 """
 
-para8 = """
+para80="""
+Too bad, you just failed the test. You need to set your priorities right and concentrate on the current mission.
+
+(current mission continues)
 The phone buzzes and now shows the president's phone number prompting the detective to call him.
 President: Hello, who is this?
 Detective(serious): You know damn well who I am.
 President: Actually, I don't, I'm sorry dont waste my time.
 *president hangs up*
 Pilot at the point blank cracks up making the detective feel condescending. Angry detective Fires the rocket launcher exploding the whole plane.
+
 MISSION FAILED - Detective died
+"""
+para81 = """
+I like the dedication. Keep it up champ!
+
+(current mission continues)
+The phone buzzes and now shows the president's phone number prompting the detective to call him.
+President: Hello, who is this?
+Detective(serious): You know damn well who I am.
+President: Actually, I don't, I'm sorry dont waste my time.
+*president hangs up*
+Pilot at the point blank cracks up making the detective feel condescending. Angry detective Fires the rocket launcher exploding the whole plane.
+
+MISSION FAILED - Detective died
+"""
+
+para9= """
+The confident cadence of Detective Bald eagle’s steps echoed through the airport as 
+he approached the security check with a gust of assuredness. Harper led as he 
+seamlessly navigated the routine check, his passage was unhindered. 
+
+Beyond the security checkpoint, the expansive airport terminal became 
+a stage for Harper's calculated performance. The familiar surroundings 
+fueled his self-assured stride, turning the airport into a canvas for 
+his return. Having successfully boarded the user_color plane, Harper's 
+confidence reached its zenith. Making it more fun the cast of user_movie 
+are on board as well. As the aircraft soared through the skies, 
+the detective, with a calculated swagger, made his way to the cockpit. 
+Wielding a user_color desert eagle gun, he pointed it at the pilot, ready 
+to unravel the final chapter of the enigma that had brought him back into the fold.
+"""
+para10="""
+The phone buzzes and now shows the president's phone number prompting the detective to video call him.
+
+President: Hello, who is this?
+
+Detective(serious): You know damn well who I am.
+
+President: The notorious Bald Eagle. It’s been so long since….(cuts)
+
+Detective(While showing the gun pointed at the pilot): Stop! Let me come straight to the point. You release my friend publicly right now or I will blow up this entire plane.
+
+President: Okay! Okay! Relax, I will release him now. Leave them alone. 
+
+*President releases a statement that they will release the detective as he was not guilty and they made a wrongful arrest*
+
+MISSION SUCCESSFUL
+
 """

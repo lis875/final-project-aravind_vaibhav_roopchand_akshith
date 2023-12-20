@@ -114,15 +114,24 @@ if __name__=="__main__":
         clear()
         if rob_bank == '1':
             setpos(-500, 0)
-            print_on_turtle("Too bad, you just failed the test. You need to set your priorities right and concentrate on the current mission.")
+            print_on_turtle(para80)
         if rob_bank == '2':
             setpos(-500, 0)
-            print_on_turtle("I like the dedication. Keep it up champ! ")
-        print_on_turtle(para8)
+            print_on_turtle(para81)
 
     if gun == '2':
         gun = "Desert Eagle"
         clear()
+        para = str(para9)
+        para = substitute_paragraph(para)
+        setpos(-500, 0)
+        print_on_turtle(para)
+        continue_with_story = textinput("Continue", "Type anything to continue")
+        clear()
+        para = str(para10)
+        para = substitute_paragraph(para)
+        setpos(-500, 0)
+        print_on_turtle(para)
 
 
     done()
