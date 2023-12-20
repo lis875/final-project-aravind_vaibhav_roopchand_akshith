@@ -1,6 +1,7 @@
 # Mission Possible 🚀
 
 A nail bitting tale about the greatest detective🔎 of all time⏳ who turned rogue to save a family 🌎
+For detailed story, read - [Final Story](https://github.com/lis875/final-project-aravind_vaibhav_roopchand_akshith/blob/main/FINAL_STORY.pdf)
 
 ## Authors
 
