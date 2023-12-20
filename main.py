@@ -2,6 +2,7 @@ from turtle import *
 from story import *
 from hangman import *
 import time
+from movie import get_movie_details
 
 screen = Screen()
 screen.setup(width=1.0, height=1.0)
@@ -21,15 +22,16 @@ intro['detective2'] = get_user_input("Detective 2", detective2)
 intro['user_color'] = get_user_input("Color", color_prompt)
 intro['user_movie'] = get_user_input("Movie", movie_promt)
 
-def print_on_turtle(para):
+def print_on_turtle(para, font_size = 15):
     penup()
     hideturtle()
-    write(para, font=('Arial', 15))
+    write(para, font=('Arial', font_size))
 
 def substitute_paragraph(paragraph: str):
     for item, value in intro.items():
         paragraph = paragraph.replace(item, value)
     return paragraph
+
 
 if __name__=="__main__":
     while True:
@@ -39,7 +41,16 @@ if __name__=="__main__":
         print_on_turtle(para)
         accept_mission_answer = textinput("Name", accept_mission)
         if accept_mission_answer == "2":
-            pass
+            afraid_mission = textinput("Are you afraid????", "Are you afraid of the mission? \n 1. Yes \n2. No")
+            if afraid_mission == '1':
+                print_on_turtle("THEN STAY IN THE JAIL FOREVERRRRRR!!! ENJOYYYYYYY!!!!!")
+                restart = textinput("RESTART", "Do you want to restart? \n 1. Yes \n2. No")
+                if restart == '1':
+                    continue
+                if restart == '2':
+                    bye()
+            if afraid_mission == '2':
+                continue
             # Stays in jail
             # Do you want to restart
             # if restart -> continue
@@ -56,7 +67,9 @@ if __name__=="__main__":
         if hangman_output == 'fail':
             pass
             pin = get_pin()
-            print_on_turtle(f"THE PIN IS - {pin}")
+            penup()
+            setpos(100, -100)
+            print_on_turtle(f"THE PIN IS - {pin}", font_size = 20)
             time.sleep(5)
             clear()
         if hangman_output == 'pass':
@@ -107,6 +120,9 @@ if __name__=="__main__":
         gun = "Invisible rocket launcher"
         clear()
         para = str(para7)
+        movie_details = get_movie_details(intro['user_movie'])
+        intro['user_movie'] = movie_details['title']
+        intro['movie_cast'] = movie_details['cast']
         para = substitute_paragraph(para)
         setpos(-500, 0)
         print_on_turtle(para)
@@ -123,6 +139,9 @@ if __name__=="__main__":
         gun = "Desert Eagle"
         clear()
         para = str(para9)
+        movie_details = get_movie_details(intro['user_movie'])
+        intro['user_movie'] = movie_details['title']
+        intro['movie_cast'] = movie_details['cast']
         para = substitute_paragraph(para)
         setpos(-500, 0)
         print_on_turtle(para)
@@ -132,6 +151,18 @@ if __name__=="__main__":
         para = substitute_paragraph(para)
         setpos(-500, 0)
         print_on_turtle(para)
+        final = textinput("Name", jump)
+        clear()
+        if final == "2":
+            para = str(para11)
+            para = substitute_paragraph(para)
+            setpos(-500, 0)
+            print_on_turtle(para)
+        if final == "1":
+            para = str(para12)
+            para = substitute_paragraph(para)
+            setpos(-500, 0)
+            print_on_turtle(para)
 
 
     done()

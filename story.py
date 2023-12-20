@@ -108,7 +108,7 @@ his passage was unhindered.
 Beyond the security checkpoint, the expansive airport terminal became a stage for Harper's calculated 
 performance. The familiar surroundings fueled his self-assured stride, turning the airport into 
 a canvas for his return. Having successfully boarded the  user_color plane, Harper's confidence 
-reached its zenith. Making it more fun the cast of user_movie are on board as well. As the aircraft 
+reached its zenith. Making it more fun the cast of \nuser_movie that is movie_cast\n are on board as well. As the aircraft 
 soared through the skies, the detective, with a calculated swagger, made his way to the cockpit. 
 Wielding an invisible rocket launcher, he pointed it at the pilot, ready to unravel the final chapter 
 of the enigma that had brought him back into the fold.
@@ -150,7 +150,7 @@ Beyond the security checkpoint, the expansive airport terminal became
 a stage for Harper's calculated performance. The familiar surroundings 
 fueled his self-assured stride, turning the airport into a canvas for 
 his return. Having successfully boarded the user_color plane, Harper's 
-confidence reached its zenith. Making it more fun the cast of user_movie 
+confidence reached its zenith. Making it more fun the cast of \nuser_movie that is movie_cast
 are on board as well. As the aircraft soared through the skies, 
 the detective, with a calculated swagger, made his way to the cockpit. 
 Wielding a user_color desert eagle gun, he pointed it at the pilot, ready 
@@ -173,4 +173,17 @@ President: Okay! Okay! Relax, I will release him now. Leave them alone.
 
 MISSION SUCCESSFUL
 
+"""
+
+para11="""
+Detective is all set to skydive, heads to the emergency exit and raises his arm 
+and pauses realizing he doesn't have a parachute.   
+
+Detective forces the pilot to navigate the plane to his desired location. 
+Lands in an abandoned airport, plans an escape to lead a happy life away from all the crime and his dark past.
+"""
+
+para12="""
+Detective forces the pilot to navigate the plane to desired location. 
+Lands in an abandoned airport, plans an escape to lead a happy life away from all the crime and his dark past.
 """
