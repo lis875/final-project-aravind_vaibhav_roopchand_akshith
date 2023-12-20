@@ -3,7 +3,7 @@ api_key = "8bf41bd8dd79b79f2cce125f6eb2bda0"
 import requests
 import json
 
-def get_movie_details():
+def get_movie_details(movie_name):
     ##### Useful URLS
     # Base URL for accessing the TMBD API
     movies_base= "https://api.themoviedb.org/3/"
@@ -18,12 +18,20 @@ def get_movie_details():
     ##### Code for accessing TMBD
 
     # Request information about the Marvels, and pass the api_key as a parameter
-    parameter = {"api_key": api_key, "query": "Harry Potter"}
+    parameter = {"api_key": api_key, "query": movie_name}
     result_json = requests.get(movie_search, parameter)
 
     # Convert the results from JSON to a dictionary
     results = json.loads(result_json.text)
-    results = results['results'][0]
+    try:
+        results = results['results'][0]
+    except:
+        parameter = {"api_key": api_key, "query": 'The Killer'}
+        result_json = requests.get(movie_search, parameter)
+
+        # Convert the results from JSON to a dictionary
+        results = json.loads(result_json.text)
+        results = results['results'][0]
     movie_id = results['id']
 
     movie_credits = movies_base + f"movie/{movie_id}/credits"
@@ -36,24 +44,25 @@ def get_movie_details():
     # Pretty print the dictionary so we can see what it looks like
 
 
-    print(results['title'])
+    # print(results['title'])
     # print(results['tagline'])
-    print('-'*10)
-    print(results['overview'])
+    # print('-'*10)
+    # print(results['overview'])
     # for genre in results['genres']:
     #     print(f'- {genre["name"]}')
-    print("Starring:")
+    # print("Starring:")
     count = 0
-    cast = []
+    cast = ''
     for star in movie_credits_results["cast"]:
         if count == 5:
             break
-        print(f'* {star["name"]}')
+        # print(f'* {star["name"]}')
         count += 1
-        cast.append(star["name"])
+        # cast.append(star["name"])
+        cast += ', ' + star['name']
 
-    movie_output = {'title': results['title'], 'cast': cast}
+    movie_output = {'title': results['title'], 'cast': str(cast)}
 
     return movie_output
 
-get_movie_details()
+# print(get_movie_details("wertyuidngasyudhia"))
