@@ -54,6 +54,7 @@ def check_pin(jail_pin, stage):
 
 def hangman():
     stage=[0]
+    setpos(100, 300)
     color("red")
     write(hangman_hint, font=('Arial', 20, "bold"))
     while True:
